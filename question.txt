@@ -1,0 +1,5 @@
+**** WMS ***
+
+- Script update inventory, jika table selisih dihapus ?
+- Invoice perlu ada discount per-product dan discount global atau tidak? jika iya, harga yang dimasukkan di price_in (inventory) diambil dari mana ?
+- Transaction ada discount per-product dan discount global, harga yang dimasukkan di price_out diambil dari mana?

@@ -182,6 +182,9 @@ function update_inventory($productstock_id, $date, $id)
 			// Recounting output
 			if ($following_inventory->type != 'Ri')
 			{
+				/**
+				 * Disini aku bingung cara menghitung price_z adjustment ketika status nya (Stock In atau stock Out)
+				 */
 				if($following_inventory->type != 'Adj')
 				{
 					$following_inventory->price_out = $return->price_z;

@@ -1,0 +1,58 @@
+Peletakan Folder
+	- Controller => app/Http/Controller
+	- model => app/Model
+	- View => resources/views
+	- Route => routes (untuk route biasa -> routes/web.php)
+	- CSS, JS, IMG => public
+	- Migration, Seeds => database
+	- folder bin digunakan untuk menginstall laravel
+
+Installation
+	- Copy folder bin ke folder yang akan di install laravel
+	- ketikkan ini di CMD "composer create-project --prefer-dist laravel/laravel blog"
+	- tunggu hingga proses selesai
+
+Controller
+	- setting terlebih dahulu namespace
+	- panggil semua model dan function2 yang dibutuhkan oleh controller
+	- Input:: ganti dengan $request->
+	- Controller sekarang harus restfull (index, create, store, show, edit, update, destroy)
+	- untuk selain restfull harus di deklarasikan terlebih dahulu di route
+
+Middleware
+	- Middleware merupakan penggati filter (laravel 4)
+	- Middleware berada di folder app/Http/Middleware
+	- untuk memanggil middleware yang sudah dibuat, perlu dideklarasikan terlebih dahulu di kernel.php agar bisa dipanggil di route
+
+Route
+	- Route::controller sudah diganti dengan Route::resource
+	- untuk mendeklarasikan sebuah method di route lakukan seperti ini Route::get('user/image', 'UserController@getImage);
+	- untuk post hanya tinggal merubah get menjadi post
+
+View
+	- Untuk HTML dan Form pembuka dan penutupnya menggunakan {!! --script-- !!}
+	- Pembuka Section => @section('content')
+	- Penutup Section => @endsection
+	- Delete tidak boleh menggunakan link, tapi harus menggunakan Form yang methodnya adalah "DELETE" dan mengarah ke index/id
+
+Migration
+	- seperti laravel 4
+
+Seeds
+	- Tidak bisa menggunakan file seeds secara terpisah
+	- Buat seeds di DatabaseSeeder lalu panggil seeder di atas
+
+Model
+	- Model masih sama seperti laravel 4, hanya saja ketika kita membuat relation, harus disertakan Namespace dari relation yang dibuat
+
+Email
+	- Email harus membuat sejenis Controller sendiri di folder app/Mail (dikarenakan di controller tidak bisa diberi extends Mailable)
+
+Optimize
+	- ini merupakan sebuah Middleware yang berfungsi memonitor website dari client agar client tidak bisa seenaknya meng-copy website dari kita
+	- untuk mengaktifkannya silahkan pergi ke kernel.php lalu di bagian "protected $middleware" paling bawah
+	- Optimize terdiri dari 
+		- penambahan satu script di config/database.php (optimize) disini kira harus memanggil IP Server yang akan kita panggil databasenya
+		- buat satu model yang mengarah ke database server yang telah dibuat
+		- buat satu middleware yang mengecek, apakah domain dari client ini terdaftar di server CREIDS
+		- panggil middleware ini di kernel.php

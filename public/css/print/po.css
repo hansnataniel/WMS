@@ -1,0 +1,130 @@
+html, body {
+	margin: 0px;
+	padding: 0px;
+	font-family: "arial";
+}
+
+span {
+	text-transform: none;
+}
+
+#index-container {
+	/*max-width: 210mm;*/
+	position: relative;
+	width: auto;
+	font-family: 'arial';
+	font-size: 0;
+	padding: 15mm;
+}
+
+#view-header {
+	width: 100%;
+	vertical-align: top;
+	/*display: inline-block;*/
+	margin-bottom: 20px;
+	font-size: 12px;
+	position: relative;
+	display: block;
+}
+
+.invoice-logo {
+	/*width: 160px;*/
+}
+
+#view-header h3 {
+	display: inline-block;
+	vertical-align: top;
+	font-weight: 1000;
+	font-size: 20px;
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 0px;
+	line-height: 20px;
+	margin-top: 7px;
+	padding-left: 15px;
+}
+
+#view-header h3 span {
+	font-weight: 100;
+	font-size: 12px;
+}
+
+#view-header h2 {
+	font-weight: 100;
+	font-size: 38px;
+	margin: 0;
+	position: relative;
+	display: block;
+	line-height: 0px;
+	width: 100%;
+	text-align: right;
+	top: -50px;
+}
+
+#view-header p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 0;
+}
+
+#index-table {
+	width: auto;
+	font-family: 'Verdana';
+	font-size: 12px;
+	width: 100%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    border-color: #000;
+}
+
+#index-table tr td {
+	width: auto;
+	font-family: 'Verdana';
+	font-size: 12px;
+	padding: 10px 10px;
+    vertical-align: top;
+    border-bottom: none;
+    border-left: none;
+}
+
+#index-table tr td a {
+	text-decoration: none;
+	color: #000;
+}
+
+#index-table tr td a:hover {
+	color: #ffac01;
+}
+
+#index-table tr.index-tr.title td {
+	padding: 7px 10px;
+	font-size: 12px;
+}
+
+#index-table tr.total td {
+	border-bottom: none;
+	border-left: none;
+}
+
+span#index-header-right {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.invoice-left, .invoice-right {
+	width: 50%;
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 12px;
+}
+
+.invoice-right {
+	width: 250px;
+			    text-align: right;
+			    position: absolute;
+			    right: 15mm;
+			}

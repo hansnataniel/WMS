@@ -1,0 +1,228 @@
+* {
+	-webkit-print-color-adjust: exact;
+	font-family: "arial";
+}
+
+
+.report-header {
+	position: relative;
+	display: block;
+	margin-bottom: 30px;
+	padding-top: 5px;
+	color: #0d0f3b;
+	border-bottom: double #0d0f3b;
+}
+
+.print {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	padding: 10px 15px 10px 40px;
+	background-color: #f7961e !important;
+	color: #fff;
+	font-size: 12px;
+	background-repeat: no-repeat !important;
+	background-position: 15px 9px !important;
+	cursor: pointer;
+	text-decoration: none !important;
+	background-size: auto 16px !important;
+
+	-webkit-transition: background 0.4s;
+	-moz-transition: background 0.4s;
+	-ms-transition: background 0.4s;
+	transition: background 0.4s;
+}
+
+.print:hover {
+	background-color: #b76f17 !important;
+	-webkit-transition: background 0.4s;
+	-moz-transition: background 0.4s;
+	-ms-transition: background 0.4s;
+	transition: background 0.4s;
+}
+
+.print:before {
+	content: '';
+	position: absolute;
+	left: 4px;
+	top: 4px;
+	width: calc(100% - 10px);
+	height: calc(100% - 10px);
+	border: 1px solid rgba(255, 255, 255, 1);
+	animation-name: borders;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes borders {
+    0% {
+    	border: 1px solid rgba(255, 255, 255, 1);
+    }
+    50% {
+    	border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    100% {
+    	border: 1px solid rgba(255, 255, 255, 1);
+    }
+}
+
+.logo {
+	position: absolute;
+	height: 100%;
+	/*background: url('../../img/patient/mesach-dentistry-logo.png') no-repeat !important;*/
+	background-position: top 50% right 0% !important;
+	background-size: 150px auto !important;
+	background-repeat: no-repeat !important;
+	width: 180px;
+	top: 0px;
+	left: 0px;
+	-webkit-print-color-adjust: exact;
+}
+
+.result {
+	display: none;
+}
+
+.report-h1 {
+	position: relative;
+	display: block;
+	width: calc(100% - 130px);
+	margin-left: 100px;
+	padding: 0px;
+	text-align: center;
+	font-size: 30px;
+	margin-top: 25px;
+	margin-bottom: 35px;
+}
+
+.report-h1 span {
+	position: relative;
+	display: block;
+	font-size: 13px;
+	margin-top: 10px;
+}
+
+.report-note {
+	position: relative;
+	display: block;
+	text-align: left;
+	margin-bottom: 10px;
+	font-size: 13px;
+}
+
+.info-before-table {
+	position: relative;
+	display: block;
+	padding: 0px 10px;
+	border-left: 3px solid #0d0f3b;
+	color: #0d0f3b;
+	/*line-height: 24px;*/
+	font-family: "arial";
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+.info-before-table td {
+	font-size: 14px;
+	padding: 5px 0px;
+}
+
+.info-before-table td.info-td-mid {
+	padding: 5px;
+}
+
+.report-table {
+	width: 100%;
+	font-size: 13px;
+	/*border: 1px solid #d2d2d2;*/
+	border-spacing: 0;
+	color: #4c4c4c;
+	padding: 0px 20px 30px;
+	font-family: "arial";
+}
+
+.report-title {
+	background: #0d0f3b !important;
+	color: #fff;
+}
+
+.report-table td, th {
+	padding: 10px;
+	text-align: left;
+}
+
+.report-table tr:nth-child(odd) {
+	background: rgba(13, 15, 59, 0.1);
+}
+
+.report-table tr.tr-title {
+	/*border: 1px solid #535353;*/
+}
+
+.return {
+	background: rgba(255, 0, 0, 0.2) !important;
+}
+
+.spending {
+	background: rgba(43, 247, 30, 0.4) !important;
+}
+
+td a {
+	text-decoration: none;
+	/*color: #f7961e;*/
+	color: #0d0f3b;
+	/*color: rgba(0, 0, 255, 1) !important;*/
+}
+
+.print-header {
+	border-bottom: 0px;
+}
+
+.print-header .report-h1 {
+	font-size: 40px;
+	text-align: right;
+	padding-right: 30px;
+	font-weight: normal;
+	line-height: 60px;
+}
+
+.print-desc {
+	position: relative;
+	display: block;
+	font-size: 0px;
+	width: 100%;
+	margin-bottom: 50px;
+	padding: 0px 20px;
+}
+
+.print-desc:after {
+	content: 'Order detail:';
+	position: absolute;
+	bottom: -40px;
+	left: 20px;
+	font-size: 16px;
+}
+
+.print-desc-item {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.print-desc-item:first-child {
+	width: 60%;
+}
+
+.print-desc-item:last-child {
+	width: 40%;
+}
+
+.print-desc-item td {
+	font-size: 14px;
+}
+
+.print-desc-item td:first-child {
+	width: 130px;
+}

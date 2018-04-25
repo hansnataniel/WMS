@@ -1,0 +1,66 @@
+.regis-content {
+	position: relative;	
+	display: table;
+	width: calc(100% - 40px);
+	max-width: 400px;
+}
+
+.regis-title {
+	position: relative;
+	display: block;
+	font-size: 50px;
+	padding: 0px;
+	margin: 0px 0px 30px;
+	text-align: center;
+	font-weight: 100;
+}
+
+
+
+.regis-form {
+	display: block;
+	position: relative;
+	margin: auto;
+	padding: 30px;
+	text-align: center;
+	border: 1px solid #d2d2d2;
+}
+
+.regis-text {
+	position: relative;
+	display: block;
+	margin-bottom: 10px;
+	height: 40px;
+	border: 1px solid #d2d2d2;
+	padding: 0px 10px;
+	width: 100%;
+	font-size: 14px;
+	text-align: left;
+}
+
+.regis-submit {
+	position: relative;
+	display: block;
+	width: 100%;
+	max-width: 200px;
+	/*background: #f7961e;*/
+	border: 1px solid #d2d2d2;
+	background: #d2d2d2;
+	height: 40px;
+	margin: 20px auto 0px;
+	color: #535353;
+
+	-webkit-transition: background 0.4s;
+	-moz-transition: background 0.4s;
+	-ms-transition: background 0.4s;
+	transition: background 0.4s;
+}
+
+.regis-submit:hover {
+	background: rgba(0, 0, 0, 0.3);
+
+	-webkit-transition: background 0.4s;
+	-moz-transition: background 0.4s;
+	-ms-transition: background 0.4s;
+	transition: background 0.4s;
+}

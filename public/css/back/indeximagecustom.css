@@ -1,0 +1,32 @@
+.sld-img {
+	width: 100%;
+	background-size: cover !important;
+	background-position: 50% !important;
+}
+
+.sld-img:before {
+	content: '';
+	position: relative;
+	display: block;
+	padding-top: 100%;
+}
+
+
+/* Desktops and laptops */
+@media screen and (min-width : 1224px) {
+
+}
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+	
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+	
+}
+
+@media screen and (max-width : 500px) {
+	
+}

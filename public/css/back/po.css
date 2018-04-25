@@ -1,0 +1,512 @@
+html, body {
+	margin: 0px;
+	padding: 0px;
+	font-family: "arial";
+}
+
+span {
+	text-transform: none;
+}
+
+#index-container {
+	/*max-width: 210mm;*/
+	position: relative;
+	width: auto;
+	font-family: 'arial';
+	font-size: 0;
+	padding: 15mm;
+}
+
+#view-header {
+	width: 100%;
+	vertical-align: top;
+	/*display: inline-block;*/
+	margin-bottom: 20px;
+	font-size: 12px;
+	position: relative;
+	display: block;
+}
+
+.invoice-logo {
+	/*width: 160px;*/
+}
+
+#view-header h3 {
+	display: inline-block;
+	vertical-align: top;
+	font-weight: 1000;
+	font-size: 20px;
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 0px;
+	line-height: 20px;
+	margin-top: 7px;
+	padding-left: 15px;
+}
+
+#view-header h3 span {
+	font-weight: 100;
+	font-size: 12px;
+}
+
+#view-header h2 {
+	font-weight: 100;
+	font-size: 38px;
+	margin: 0;
+	position: relative;
+	display: block;
+	line-height: 0px;
+	width: 100%;
+	text-align: right;
+	top: -50px;
+}
+
+#view-header p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 0;
+}
+
+#index-table {
+	width: auto;
+	font-family: 'Verdana';
+	font-size: 12px;
+	width: 100%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    border-color: #000;
+}
+
+#index-table tr td {
+	width: auto;
+	font-family: 'Verdana';
+	font-size: 12px;
+	padding: 10px 10px;
+    vertical-align: top;
+    border-bottom: none;
+    border-left: none;
+}
+
+#index-table tr td a {
+	text-decoration: none;
+	color: #000;
+}
+
+#index-table tr td a:hover {
+	color: #ffac01;
+}
+
+#index-table tr.index-tr.title td {
+	padding: 7px 10px;
+	font-size: 12px;
+}
+
+#index-table tr.total td {
+	border-bottom: none;
+	border-left: none;
+}
+
+span#index-header-right {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.invoice-left, .invoice-right {
+	width: 50%;
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 12px;
+}
+
+.invoice-right {
+	width: 250px;
+    text-align: right;
+    position: absolute;
+    right: 15mm;
+}
+
+
+
+
+div.product-container {
+			position: relative;
+			border: 1px solid #0d0f3b !important;
+			padding: 20px !important;
+			/*max-width: 500px;*/
+			width: 100%;
+		}
+
+		div.product-container table {
+			width: 100%;
+		}
+
+		div.product-container table tr {
+			border-bottom: 1px solid #d2d2d2;
+		}
+
+		div.product-container table tr:last-child {
+			border-bottom: 0px;
+		}
+
+		div.product-container table .tr-title {
+			border-bottom: double #0d0f3b;
+		}
+
+		div.product-container table th {
+			text-align: left;
+			padding: 0px 10px 10px 10px;
+			vertical-align: baseline;
+		}
+
+		div.product-container table td {
+			padding: 10px;
+			vertical-align: baseline;
+		}
+
+		.product-delete {
+			color: red;
+			cursor: pointer;
+		}
+
+		.edit-product-text {
+			position: relative;
+			display: block;
+			height: 40px;
+			width: 120px;
+			padding: 0px 10px;
+			border: 1px solid #d2d2d2;
+		}
+
+		.edit-product-text.small {
+			width: 70px;
+		}
+
+		div.product-container table td a {
+			position: relative;
+			display: block;
+			min-height: 40px;
+			margin-bottom: 5px;
+		}
+
+		.rec-container {
+			position: relative;
+			display: block;
+			width: 100%;
+			font-size: 0px;
+			padding-left: 35px;
+		}
+
+		.rec-group {
+			position: relative;
+			display: block;
+			text-align: left;
+		}
+
+		.rec-group.rec-title {
+			font-weight: bold;
+			/*border-top: double #d2d2d2;*/
+			border-bottom: double #d2d2d2;
+		}
+
+		.rec-item {
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			padding: 5px 10px;
+			font-size: 14px;
+			width: 50%;
+		}
+
+		.rec-group .rec-title.rec-title {
+			padding: 10px;
+			border-bottom: 1px solid #d2d2d2;
+		}
+
+		.rec-switch {
+			position: relative;
+			display: block;
+			padding-left: 45px;
+			font-size: 12px;
+			font-style: italic;
+			cursor: pointer;
+			padding-top: 20px;
+			padding-bottom: 10px;
+			color: #f7961e;
+		}
+
+		.rec-empty {
+			position: relative;
+			display: block;
+			/*padding-left: 45px;*/
+			font-size: 12px;
+			color: red;
+			font-style: italic;
+			/*padding-top: 10px;*/
+		}
+
+		.edit-product-close {
+			position: relative;
+			display: block;
+			color: red;
+			cursor: pointer;
+		}
+
+		.type-container {
+			text-align: left;
+			/*position: relative;*/
+			/*display: flex;*/
+			/*height: 40px;*/
+			/*width: 80px;*/
+			/*border: 1px solid #d2d2d2;*/
+			/*font-size: 0px;*/
+		}
+
+		.type-item {
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			width: 39px;
+			/*height: 40px;*/
+			color: #0d0f3b;
+			background: transparent;
+			font-size: 14px;
+			text-align: center;
+			line-height: 38px;
+			cursor: pointer;
+
+			-webkit-transition: color 0.4s, background 0.4s;
+			-moz-transition: color 0.4s, background 0.4s;
+			-ms-transition: color 0.4s, background 0.4s;
+			transition: color 0.4s, background 0.4s;
+		}
+
+		.type-item:hover {
+			color: #fff;
+			background: #f7961f;
+
+			-webkit-transition: color 0.4s, background 0.4s;
+			-moz-transition: color 0.4s, background 0.4s;
+			-ms-transition: color 0.4s, background 0.4s;
+			transition: color 0.4s, background 0.4s;
+		}
+
+		.type-item.active {
+			color: #fff;
+			background: #f7961f;
+		}
+
+		.form-open {
+			position: relative;
+			display: block;
+		}
+
+		.form-group {
+			position: relative;
+			display: block;
+			width: 100%;
+			font-size: 0px;
+			color: #0d0f3b;
+			margin-bottom: 10px;
+			padding: 0px 30px;
+			top: 100px;
+			opacity: 0;
+		}
+
+		.form-label {
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			width: 150px;
+			line-height: 40px;
+			font-size: 14px;
+			text-align: left;
+		}
+
+		.form-text {
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			width: calc(100% - 150px);
+			height: 40px;
+			border: 0px;
+			font-size: 0px;
+			padding: 0px;
+		}
+
+		.form-select {
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			width: calc(100% - 150px);
+			height: 40px;
+			border: 1px solid #d2d2d2;
+			font-size: 14px;
+			text-align: left;
+		}
+
+		.form-product-name {
+			border: 0px !important;
+			font-size: 18px !important;
+			padding: 0px !important;
+		}
+
+		input.form-text {
+			border: 1px solid #d2d2d2;
+			font-size: 14px;
+			padding: 0px 10px;
+		}
+
+		.pop-content {
+			max-width: 720px;
+		}
+
+		.loading {
+			position: absolute;
+			display: none;
+		}
+
+		.loading span {
+			position: relative;
+			display: block;
+			width: 100%;
+			height: 50px;
+			font-size: 20px;
+			text-align: center;
+			line-height: 50px;
+		}
+
+		.add-new {
+			position: absolute;
+			cursor: pointer;
+			left: -1px;
+			top: -41px;
+			padding: 10px 15px;
+			font-size: 14px;
+			background: #0d0f3b;
+			color: #fff;
+			height: 40px;
+		}
+
+		.form-submit {
+			position: relative;
+			display: table;
+			padding: 0px 15px;
+			font-size: 14px;
+			background: #0d0f3b;
+			color: #fff;
+			height: 40px;
+			border: 0px;
+			margin: auto;
+		}
+
+		.form-recomendation {
+			position: relative;
+			display: block;
+			padding-left: 180px;
+		}
+
+		.rec-group {
+			position: relative;
+			display: none;
+			width: calc(100% - 30px);
+			border: 1px solid #0d0f3b;
+			padding: 20px;
+			margin-bottom: 15px;
+		}
+
+		.recomendation-table {
+			position: relative;
+			width: 100%;
+		}
+
+		.recomendation-title {
+			border-bottom: double #0d0f3b;
+		}
+
+		.recomendation-table td, th {
+			padding: 10px;
+			font-size: 12px;
+		}
+
+		.no-recomendation {
+			font-size: 12px;
+			position: relative;
+			display: block;
+			/*height: 40px;*/
+			/*line-height: 40px;*/
+			color: red;
+			text-align: center;
+		}
+
+		.radio-group {
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			width: 60px;
+			height: 40px;
+			margin-bottom: 5px;
+		}
+
+		.radio-type {
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			line-height: 20px;
+			margin-right: 5px;
+			top: 14px;
+		}
+
+		.radio-label {
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			font-size: 12px;
+			line-height: 40px;
+		}
+
+		.global-group {
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			width: 60px;
+			/*height: 40px;*/
+			margin-bottom: 5px;
+		}
+
+		.global-type {
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			line-height: 20px;
+			margin-right: 0px;
+			top: 6px;
+		}
+
+		.global-label {
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			font-size: 18px;
+			/*line-height: 40px;*/
+		}
+
+		.form-alert {
+			position: relative;
+			display: none;
+			width: calc(100% - 60px);
+			margin: auto;
+			padding: 10px;
+			font-size: 12px;
+			border: 1px solid red;
+			color: red;
+			text-align: center;
+			margin-bottom: 30px;
+		}
+
+		.index-action-child-container li > * {
+			margin-bottom: 0px !important;
+		}

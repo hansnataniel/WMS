@@ -1,0 +1,249 @@
+.sld-group > .sld-group {
+	position: relative;
+	display: block;
+	padding-top: 30px;
+}
+
+.sld-item {
+	padding: 0px;
+}
+
+.sld-img {
+	position: relative;
+	display: block;
+	width: 100%;
+	/*height: 150px;*/
+	background-size: cover !important;
+	background-position: 50% !important;
+}
+
+.sld-icon-container {
+	position: relative;
+	width: 100%;
+	display: block;
+	right: 0px;
+	top: 0px;
+	font-size: 0px;
+	/*padding-top: 5px;*/
+}
+
+.sld-icon-item {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	width: calc(100% / 3);
+	height: 40px;
+	text-align: center;
+	/*margin-right: 5px;*/
+	cursor: pointer;
+	background: #0d0f3b;
+
+	-webkit-transition: background 0.4s;
+	-moz-transition: background 0.4s;
+	-ms-transition: background 0.4s;
+	transition: background 0.4s;
+}
+
+.sld-icon-item.delete {
+	background: red !important;
+}
+
+.sld-icon-item:hover {
+	background: #f7961f;
+
+	-webkit-transition: background 0.4s;
+	-moz-transition: background 0.4s;
+	-ms-transition: background 0.4s;
+	transition: background 0.4s;
+}
+
+.sld-icon-item img {
+	position: relative;
+	display: table;
+	top: 10px;
+	margin: auto;
+	height: 20px;
+}
+
+.sld-content {
+	position: relative;
+	display: block;
+	padding: 10px 20px;
+	color: #0d0f3b;
+}
+
+.sld-group {
+	position: relative;
+	display: block;
+	margin-bottom: 15px;
+}
+
+.sld-group span {
+	position: relative;
+	display: block;
+	font-size: 14px;
+}
+
+.sld-group span:first-child {
+	/*border-bottom: 1px solid #d2d2d2;*/
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+.sld-group span span {
+	font-weight: normal !important;
+}
+
+.sld-order-group {
+	position: relative;
+	display: block;
+	font-size: 0px;
+}
+
+.sld-form {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 5px;
+}
+
+.sld-order-text {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	width: 80px;
+	height: 40px;
+	padding: 0px 10px;
+	border: 1px solid #d2d2d2;
+	font-size: 14px;
+	margin-right: 5px;
+}
+
+.sld-form-submit {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	height: 40px;
+	border: 0px;
+	background: #f7961f;
+	color: #fff;
+	padding: 0px 10px;
+	font-size: 14px;
+
+	-webkit-transition: background 0.4s;
+	-moz-transition: background 0.4s;
+	-ms-transition: background 0.4s;
+	transition: background 0.4s;
+}
+
+.sld-form-submit:hover {
+	background: #0d0f3b;
+
+	-webkit-transition: background 0.4s;
+	-moz-transition: background 0.4s;
+	-ms-transition: background 0.4s;
+	transition: background 0.4s;
+}
+
+.sld-form-down {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	height: 40px;
+	width: 24px;
+	background: #f7961f;
+	margin-right: 5px;
+
+	-webkit-transition: background 0.4s;
+	-moz-transition: background 0.4s;
+	-ms-transition: background 0.4s;
+	transition: background 0.4s;
+}
+
+.sld-form-down:after {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 6px;
+	height: 6px;
+	border-top: 2px solid #fff;
+	border-left: 2px solid #fff;
+	top: 14px;
+	left: 8px;
+	
+	-webkit-transform: rotate(-135deg);
+	-moz-transform: rotate(-135deg);
+	-ms-transform: rotate(-135deg);
+	transform: rotate(-135deg);
+}
+
+.sld-form-down:hover {
+	background: #0d0f3b;
+
+	-webkit-transition: background 0.4s;
+	-moz-transition: background 0.4s;
+	-ms-transition: background 0.4s;
+	transition: background 0.4s;
+}
+
+.sld-form-up {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	height: 40px;
+	width: 24px;
+	background: #f7961f;
+	margin-right: 5px;
+
+	-webkit-transition: background 0.4s;
+	-moz-transition: background 0.4s;
+	-ms-transition: background 0.4s;
+	transition: background 0.4s;
+}
+
+.sld-form-up:hover {
+	background: #0d0f3b;
+
+	-webkit-transition: background 0.4s;
+	-moz-transition: background 0.4s;
+	-ms-transition: background 0.4s;
+	transition: background 0.4s;
+}
+
+.sld-form-up:after {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 6px;
+	height: 6px;
+	border-top: 2px solid #fff;
+	border-left: 2px solid #fff;
+	top: 18px;
+	left: 8px;
+	
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+
+
+/* Desktops and laptops */
+@media screen and (min-width : 1224px) {
+
+}
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+	
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+	
+}
+
+@media screen and (max-width : 500px) {
+	
+}

@@ -1,0 +1,594 @@
+.index-desc-container {
+	position: relative;
+	display: block;
+	padding: 0px 0px 20px;
+	border-bottom: 1px solid #d2d2d2;
+	font-size: 0px;
+	margin-bottom: 30px;
+}
+
+.index-button-item {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	height: 40px;
+	background: #f7961f;
+	padding: 0px 15px;
+	margin-right: 5px;
+	font-size: 14px;
+	line-height: 40px;
+	color: #fff;
+
+	-webkit-transition: background 0.4s;
+	-moz-transition: background 0.4s;
+	-ms-transition: background 0.4s;
+	transition: background 0.4s;
+}
+
+.index-button-item:hover {
+	background: #0d0f3b;
+
+	-webkit-transition: background 0.4s;
+	-moz-transition: background 0.4s;
+	-ms-transition: background 0.4s;
+	transition: background 0.4s;
+}
+
+.index-button-back:before {
+	content: '';
+	position: absolute;
+	height: 6px;
+	width: 6px;
+	left: 13px;
+	top: 17px;
+	border-left: 2px solid #fff;
+	border-top: 2px solid #fff;
+
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.index-desc-item {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	height: 40px;
+	margin-right: 5px;
+	padding: 0px 15px;
+	background: #f7961f;
+	color: #fff;
+	font-size: 0px;
+
+	-webkit-transition: background 0.4s;
+	-moz-transition: background 0.4s;
+	-ms-transition: background 0.4s;
+	transition: background 0.4s;
+}
+
+.index-desc-item:hover {
+	background: #0d0f3b;
+
+	-webkit-transition: background 0.4s;
+	-moz-transition: background 0.4s;
+	-ms-transition: background 0.4s;
+	transition: background 0.4s;
+}
+
+.index-desc-item img {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	max-height: 20px;
+	max-width: 20px;
+	top: 10px;
+}
+
+.index-desc-item span {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	line-height: 40px;
+	font-size: 14px;
+	margin-left: 10px;
+}
+
+.index-desc-count {
+	position: absolute;
+	right: 0px;
+	bottom: 20px;
+	font-size: 16px;
+	color: #0d0f3b;
+}
+
+.index-table {
+	position: relative;
+	width: 100%;
+	border-spacing: 0px;
+	color: #0d0f3b;
+	font-size: 14px;
+}
+
+.index-tr-title {
+	border-bottom: 1px solid #0d0f3b;
+}
+
+.index-tr-title th {
+	text-align: left;
+}
+
+.index-table th, .index-table td {
+	padding: 15px 10px;
+	vertical-align: top;
+}
+
+.index-table tr:nth-child(even) {
+	background: #fafafa;
+}
+
+.index-td-icon {
+	width: 120px;
+	position: relative;
+}
+
+.index-action-switch {
+	position: absolute;
+	display: block;
+	height: 40px;
+	color: #fff;
+	padding: 0px 15px;
+	background: #f7961f;
+	/*top: 6px;*/
+	top: calc((100% - 40px) / 2);
+	cursor: pointer;
+	font-size: 0px;
+
+	-webkit-transition: background 0.4s;
+	-moz-transition: background 0.4s;
+	-ms-transition: background 0.4s;
+	transition: background 0.4s;
+}
+
+.index-action-switch:hover {
+	background: #0d0f3b;
+
+	-webkit-transition: background 0.4s;
+	-moz-transition: background 0.4s;
+	-ms-transition: background 0.4s;
+	transition: background 0.4s;
+}
+
+.index-action-switch.active {
+	background: #0d0f3b !important;
+}
+
+.index-action-switch span {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 14px;
+	line-height: 40px;
+	margin-right: 5px;
+}
+
+.index-action-arrow {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	width: 10px;
+	height: 100%;
+	background: url('../../img/admin/index/down_arrow_icon.png') no-repeat;
+	/*background: #000;*/
+	background-size: contain !important;
+	background-position: 50% !important;
+}
+
+.index-action-child-container {
+	display: none;
+	position: absolute;
+	/*display: block;*/
+	padding: 0px;
+	top: 100%;
+	right: 0px;
+	background: #f7961f;
+	z-index: 10;
+	width: 100px;
+}
+
+.index-action-child-container li {
+	position: relative;
+	display: block;
+	background: transparent;
+	top: 30px;
+	opacity: 0;
+
+	-webkit-transition: background 0.4s;
+	-moz-transition: background 0.4s;
+	-ms-transition: background 0.4s;
+	transition: background 0.4s;
+}
+
+.index-action-child-container li:hover {
+	background: #0d0f3b;
+
+	-webkit-transition: background 0.4s;
+	-moz-transition: background 0.4s;
+	-ms-transition: background 0.4s;
+	transition: background 0.4s;
+}
+
+.index-action-child-container li > * {
+	padding: 10px 15px;
+	position: relative;
+	display: block;
+	font-size: 0px;
+}
+
+.index-action-child-container li > *.separator {
+	border-bottom: 1px solid #fff;
+}
+
+.index-action-child-container li > * > img {
+	position: absolute;
+	display: block;
+	max-width: 18px;
+	max-height: 18px;
+	left: 15px;
+	top: calc((100% - 18px) / 2)
+}
+
+.index-action-child-container li > * > span {
+	font-size: 14px;
+	position: relative;
+	display: block;
+	padding-left: 30px;
+	line-height: normal;
+}
+
+.index-del-content {
+	position: relative;
+	display: none;
+}
+
+.index-del-title {
+	position: relative;
+	display: block;
+	font-size: 16px;
+	margin-bottom: 30px;
+	padding: 0px 20px;
+}
+
+.index-del-img {
+	position: relative;
+	display: block;
+	margin: 0px auto 20px;
+	max-height: 150px;
+}
+
+.index-del-table {
+	position: relative;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+.index-del-table tr {
+	background: #f5f5f5;
+	border-top: 1px solid #d2d2d2;
+	border-bottom: 1px solid #d2d2d2;
+}
+
+.index-del-table td {
+	padding: 10px;
+	font-size: 14px;
+}
+
+.index-del-table td:last-child {
+	text-align: left;
+}
+
+.index-del-table td.index-td-mid {
+	width: 5px !important;
+	padding-right: 0px;
+}
+
+.form {
+	position: relative;
+	display: block;
+	font-size: 0px;
+}
+
+.index-del-button {
+	position: relative;
+	display: inline-block;
+	font-size: 14px;
+	vertical-align: top;
+	padding: 0px 15px;
+	height: 35px;
+	background: #0d0f3b;
+	color: #fff;
+	margin-right: 5px;
+	width: 150px;
+	border: 0px;
+
+	-webkit-transition: background 0.4s;
+	-moz-transition: background 0.4s;
+	-ms-transition: background 0.4s;
+	transition: background 0.4s;
+}
+
+.index-del-button:hover {
+	background: red;
+
+	-webkit-transition: background 0.4s;
+	-moz-transition: background 0.4s;
+	-ms-transition: background 0.4s;
+	transition: background 0.4s;
+}
+
+.index-del-button:last-child {
+	margin-right: 0px;
+}
+
+.index-del-button.cancel {
+	background: red;
+}
+
+.index-del-item {
+	top: 50px;
+	opacity: 0;
+}
+
+
+/*
+	Order CSS
+*/
+
+.index-order-group {
+	position: relative;
+	display: block;
+	font-size: 0px;
+}
+
+.index-form {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 5px;
+}
+
+.index-order-text {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	width: 50px;
+	height: 40px;
+	padding: 0px 10px;
+	border: 1px solid #d2d2d2;
+	font-size: 14px;
+	margin-right: 5px;
+}
+
+.index-form-submit {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	height: 40px;
+	border: 0px;
+	background: #f7961f;
+	color: #fff;
+	padding: 0px 10px;
+	font-size: 14px;
+
+	-webkit-transition: background 0.4s;
+	-moz-transition: background 0.4s;
+	-ms-transition: background 0.4s;
+	transition: background 0.4s;
+}
+
+.index-form-submit:hover {
+	background: #0d0f3b;
+
+	-webkit-transition: background 0.4s;
+	-moz-transition: background 0.4s;
+	-ms-transition: background 0.4s;
+	transition: background 0.4s;
+}
+
+.index-form-down {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	height: 40px;
+	width: 24px;
+	background: #f7961f;
+	margin-right: 5px;
+
+	-webkit-transition: background 0.4s;
+	-moz-transition: background 0.4s;
+	-ms-transition: background 0.4s;
+	transition: background 0.4s;
+}
+
+.index-form-down:after {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 6px;
+	height: 6px;
+	border-top: 2px solid #fff;
+	border-left: 2px solid #fff;
+	top: 14px;
+	left: 8px;
+
+	-webkit-transform: rotate(-135deg);
+	-moz-transform: rotate(-135deg);
+	-ms-transform: rotate(-135deg);
+	transform: rotate(-135deg);
+}
+
+.index-form-down:hover {
+	background: #0d0f3b;
+
+	-webkit-transition: background 0.4s;
+	-moz-transition: background 0.4s;
+	-ms-transition: background 0.4s;
+	transition: background 0.4s;
+}
+
+.index-form-up {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	height: 40px;
+	width: 24px;
+	background: #f7961f;
+	margin-right: 5px;
+
+	-webkit-transition: background 0.4s;
+	-moz-transition: background 0.4s;
+	-ms-transition: background 0.4s;
+	transition: background 0.4s;
+}
+
+.index-form-up:hover {
+	background: #0d0f3b;
+
+	-webkit-transition: background 0.4s;
+	-moz-transition: background 0.4s;
+	-ms-transition: background 0.4s;
+	transition: background 0.4s;
+}
+
+.index-form-up:after {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 6px;
+	height: 6px;
+	border-top: 2px solid #fff;
+	border-left: 2px solid #fff;
+	top: 18px;
+	left: 8px;
+
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.index-img-list {
+	max-width: 100px;
+	max-height: 40px;
+}
+
+.index-button-back {
+	padding-left: 20px;
+	width: auto;
+
+	-webkit-transition: background 0.4s;
+	-moz-transition: background 0.4s;
+	-ms-transition: background 0.4s;
+	transition: background 0.4s;
+}
+
+.index-button-back:hover {
+	background: #0d0f3b;
+
+	-webkit-transition: background 0.4s;
+	-moz-transition: background 0.4s;
+	-ms-transition: background 0.4s;
+	transition: background 0.4s;
+}
+
+.index-button-back:before {
+	content: '';
+	position: absolute;
+	height: 6px;
+	width: 6px;
+	left: 15px;
+	top: 17px;
+	border-left: 2px solid #fff;
+	border-top: 2px solid #fff;
+
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+
+/* Desktops and laptops */
+@media screen and (min-width : 1224px) {
+
+}
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+	
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+	.index-table {
+		font-size: 12px;
+	}
+
+	.index-table th, td {
+		padding: 10px 5px;
+	}
+
+	.index-action-switch {
+		height: 30px;
+		padding: 0px 10px;
+	}
+
+	.index-action-switch span {
+		line-height: 30px;
+		font-size: 12px;
+	}
+
+	.index-action-child-container li > * > img {
+		max-height: 15px;
+		max-width: 15px;
+	}
+
+	.index-action-child-container li > * > span {
+		font-size: 12px;
+	}
+
+	.page-item-content {
+		overflow-y: hidden;
+		overflow-x: auto;
+	}
+
+	.index-order-text {
+		height: 30px;
+		font-size: 12px;
+	}
+
+	.index-form-submit {
+		height: 30px;
+		font-size: 12px;
+	}
+
+	.index-form-down {
+		height: 30px;
+	}
+
+	.index-form-down:after {
+		top: 9px;
+	}
+
+	.index-form-up {
+		height: 30px;
+	}
+
+	.index-form-up:after {
+		top: 13px;
+	}
+}
+
+@media screen and (max-width : 500px) {
+	
+}
